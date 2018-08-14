@@ -13,8 +13,9 @@ public class Officer extends Employee{
     }
 
 
-    public void display () {
+    public void show () {
         System.out.println(getId()+","+getName()+","+dept);
     }
+
 
 }
