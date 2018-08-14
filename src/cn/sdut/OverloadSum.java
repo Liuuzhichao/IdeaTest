@@ -27,4 +27,19 @@ public class OverloadSum {
         }
         return sum;
     }
+
+    /**
+     * 重载的测试,会自动进行数据类型的转换
+     * @param t
+     */
+    public void test ( double t ) {
+        System.out.println("double");
+    }
+    public void test ( float t) {
+        System.out.println("float");
+    }
+    public void test ( long t ) {
+        System.out.println("long");
+    }
+
 }
