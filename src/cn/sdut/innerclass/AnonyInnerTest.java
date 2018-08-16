@@ -1,4 +1,4 @@
-package cn.sdut.cn.sdut.innerclass;
+package cn.sdut.innerclass;
 
 /**
  * Created by liuzhichao on 2018/8/16.
