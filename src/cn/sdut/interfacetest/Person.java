@@ -1,4 +1,4 @@
-package cn.sdut.cn.sdut.interfacetest;
+package cn.sdut.interfacetest;
 
 /**
  * Created by liuzhichao on 2018/8/16.
