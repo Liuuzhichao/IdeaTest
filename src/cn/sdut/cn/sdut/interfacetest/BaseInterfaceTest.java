@@ -10,10 +10,10 @@ public class BaseInterfaceTest implements BaseInterface {
      * 而接口中的默认访问权限是public,
      * 类中的访问权限需要大于等于接口的方法的访问权限
      */
-    @Override
+   /* @Override
     void show() {
 
-    }
+    }*/
 
     /**
      * 正确的重写
