@@ -1,4 +1,4 @@
-package cn.sdut;
+package cn.sdut.singleton;
 
 /**
  * 单例模式

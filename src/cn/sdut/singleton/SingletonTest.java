@@ -1,4 +1,4 @@
-package cn.sdut;
+package cn.sdut.singleton;
 
 public class SingletonTest {
 
