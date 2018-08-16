@@ -1,4 +1,4 @@
-package cn.sdut.cn.sdut.interfacetest;
+package cn.sdut.interfacetest;
 
 import java.util.Scanner;
 
@@ -8,7 +8,14 @@ import java.util.Scanner;
 public class Gardener {
 
     public static void main(String[] args) {
+        GardenerTest gardener = new GardenerTest();
+        gardener.create();
+    }
+}
 
+class GardenerTest {
+
+    public void create() {
         Scanner in = new Scanner(System.in);
         String fruit = in.nextLine();
         Fruit fruitKinds = null;
@@ -27,4 +34,5 @@ public class Gardener {
             System.out.println("输入错误...");
         }
     }
+
 }
