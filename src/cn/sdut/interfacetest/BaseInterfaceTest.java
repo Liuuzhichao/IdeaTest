@@ -1,4 +1,6 @@
-package cn.sdut.cn.sdut.interfacetest;
+package cn.sdut.interfacetest;
+
+import cn.sdut.interfacetest.BaseInterface;
 
 /**
  * Created by liuzhichao on 2018/8/16.
