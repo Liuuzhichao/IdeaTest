@@ -1,4 +1,6 @@
-package cn.sdut;
+package cn.sdut.inheritance;
+
+import cn.sdut.inheritance.Vehicle;
 
 public class Car extends Vehicle {
 
