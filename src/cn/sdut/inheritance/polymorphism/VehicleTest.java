@@ -1,4 +1,4 @@
-package cn.sdut.inheritance;
+package cn.sdut.inheritance.polymorphism;
 
 public class VehicleTest {
 

@@ -1,4 +1,4 @@
-package cn.sdut.inheritance;
+package cn.sdut.inheritance.polymorphism;
 
 /**
  * 2、(1)定义一个汽车类 Vehicle，要求如下：（知识点：类的继承 方法的覆盖）

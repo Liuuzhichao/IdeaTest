@@ -1,6 +1,6 @@
-package cn.sdut.inheritance;
+package cn.sdut.inheritance.polymorphism;
 
-import cn.sdut.inheritance.Vehicle;
+import cn.sdut.inheritance.polymorphism.Vehicle;
 
 public class Car extends Vehicle {
 
