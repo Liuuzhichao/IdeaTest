@@ -1,4 +1,4 @@
-package cn.sdut;
+package cn.sdut.exception;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
