@@ -1,4 +1,6 @@
-package cn.sdut;
+package cn.sdut.inheritance.polymorphism;
+
+import cn.sdut.inheritance.polymorphism.ColaEmployee;
 
 public class SalariedEmployee extends ColaEmployee {
 
