@@ -1,4 +1,4 @@
-package cn.sdut;
+package cn.sdut.inheritance.polymorphism;
 
 /**
  * 编写两个方法getSum（int  end）[1+2+3..+end]，
