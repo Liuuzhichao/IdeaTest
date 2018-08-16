@@ -15,7 +15,7 @@ public class Gardener {
 
 class GardenerTest {
 
-    public void create() {
+    public Fruit create() {
         Scanner in = new Scanner(System.in);
         String fruit = in.nextLine();
         Fruit fruitKinds = null;
@@ -33,6 +33,7 @@ class GardenerTest {
         if ( fruitKinds == null ) {
             System.out.println("输入错误...");
         }
+        return fruitKinds;
     }
 
 }
