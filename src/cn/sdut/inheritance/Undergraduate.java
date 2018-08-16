@@ -1,4 +1,4 @@
-package cn.sdut;
+package cn.sdut.inheritance;
 
 public class Undergraduate extends Student {
 
