@@ -1,4 +1,4 @@
-package cn.sdut;
+package cn.sdut.inheritance.abstractclass;
 
 /**
  * Created by liuzhichao on 2018/8/15.
