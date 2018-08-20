@@ -14,18 +14,18 @@ import java.lang.String;
  */
 public class ParameterException {
 
-    public static void main(String[] args) throws ParameterFormateException, ParameterNumberException {
-        check("a","8888");
-        check("a","a","a");
+    public static void main(String[] args) /*throws ParameterFormateException, ParameterNumberException*/ {
+      /*  check("a","8888");
+        check("a","a","a");*/
         /**
-         * 只有交给Java虚拟机处理(throws)才会报出自定义异常,
-         * 无法自己用try..catch捕捉,是否需要重写printStackTrace()方法?
+         * 如果不用try..catch处理异常,那就交给Java虚拟机处理(throws)去报出异常
+         * 如果用用try..catch捕捉,不需要重写printStackTrace()方法,直接调用就可以
          */
-        /*try {
+        try {
             check("a","a","a");
         } catch(ParameterNumberException | ParameterFormateException ex) {
-
-        }*/
+            ex.printStackTrace();
+        }
     }
 
     /**
