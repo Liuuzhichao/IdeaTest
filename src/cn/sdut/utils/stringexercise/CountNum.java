@@ -23,8 +23,10 @@ public class CountNum {
     public static int[] countNum(String string) {
         int[] array = new int[10];
         for( int i = 0; i < string.length(); i++ ) {
-            int num = Integer.parseInt(String.valueOf(string.charAt(i)));
-            array[num]++;
+            if( Character.isDigit(string.charAt(i)) ) {
+                int num = Integer.parseInt(String.valueOf(string.charAt(i)));
+                array[num]++;
+            }
         }
         return array;
     }
