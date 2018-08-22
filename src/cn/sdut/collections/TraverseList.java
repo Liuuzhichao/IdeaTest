@@ -58,7 +58,7 @@ public class TraverseList {
             Object obj = lit.previous();
             System.out.print(obj+"\t");
         }
-        
+
     }
 }
 class Student{
