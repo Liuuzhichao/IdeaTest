@@ -90,6 +90,8 @@ public class MapTest {
         }
 
         System.out.println("===========遍历方式二===============");
+        map.forEach((k,v)->{System.out.println(k+":"+v);});
+
     }
 
 }
