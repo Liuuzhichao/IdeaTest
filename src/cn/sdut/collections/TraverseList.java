@@ -21,7 +21,7 @@ public class TraverseList {
         /**
          * 将ArrayList换成LinkedList即可实现对于LinkedList的遍历
          */
-        List list = new ArrayList(3);
+        List<Student> list = new ArrayList<Student>(3);
         list.add(stu1);
         list.add(stu2);
         list.add(stu3);
