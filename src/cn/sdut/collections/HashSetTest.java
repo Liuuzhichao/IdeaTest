@@ -87,11 +87,15 @@ public class HashSetTest {
             System.out.print(obj+"\t");
         }
 
+        System.out.println("=============Set集合lambda遍历==================");
+        set.forEach(e->{System.out.print(e+"\t");});
+
+
     }
 
 }
 
-class  Cat
+class  Cat implements Comparable
 {
     private int age;
     private String  name;
@@ -151,4 +155,14 @@ class  Cat
         return 31*this.age+this.name.hashCode();
     }
 
+    /**
+     * 重写比较对象的方法
+     * @param obj 
+     * @return
+     */
+    @Override
+    public int compareTo(Object obj) {
+        Cat cat = (Cat)obj;
+        return this.age-cat.age;
+    }
 }
