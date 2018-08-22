@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * 3、在一个列表中存储以下元素：apple,grape,banana,pear
  * 3.1 返回集合中的最大的和最小的元素
- * 3.2 将集合进行排序，并将排序后的结果打印在控制台上 
+ * 3.2 将集合进行排序，并将排序后的结果打印在控制台上
  */
 public class CollectionsMethodsTest {
 
