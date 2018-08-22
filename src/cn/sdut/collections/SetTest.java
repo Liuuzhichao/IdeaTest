@@ -12,10 +12,17 @@ import java.util.Set;
  * HashSet:散列的,里面的元素无序且不重复,只能存储引用数据类型的对象
  * 线程不安全,不同步的,存取速度比较快,底层实现是用HashMap实现
  */
-public class HashSetTest {
+/**
+ * TreeSet
+ * 线程不安全,不同步的,此类保证排序后的set按照升序排列元素
+ */
+public class SetTest {
 
     public static void main(String[] args) {
         // TODO Auto-generated method stub
+        /**
+         * TreeSet方法同理
+         */
         Set set=new HashSet();
         set.add(true);
         /**
@@ -157,7 +164,7 @@ class  Cat implements Comparable
 
     /**
      * 重写比较对象的方法
-     * @param obj 
+     * @param obj
      * @return
      */
     @Override
