@@ -58,6 +58,12 @@ public class TraverseList {
             Object obj = lit.previous();
             System.out.print(obj+"\t");
         }
+        System.out.println();
+
+        System.out.println("*********lambda表达式遍历集合************");
+        list.forEach(lambda->{
+            System.out.print(lambda+"\t");
+        });
 
     }
 }
