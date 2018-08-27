@@ -41,7 +41,7 @@ public class CreateStreamTest {
         Stream<Integer> st3 = Stream.iterate(0, x -> x + 2);
         //st3.forEach(System.out::println);
         st3.limit(10).forEach(System.out::println);
-        
+
         /**
          * 创建无限流,generate()方法,可以用limit()方法来进行限制
          */
