@@ -3,6 +3,10 @@ package cn.sdut.thread;
 /**
  * Created by liuzhichao on 2018/8/24.
  */
+
+/**
+ * 1个进程可以包含1个或多个线程,一个线程就是一个程序内部的一条执行线索
+ */
 public class ThreadClassTest {
 
     public static void main(String[] args) {
