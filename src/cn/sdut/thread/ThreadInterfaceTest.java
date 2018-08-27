@@ -17,6 +17,9 @@ public class ThreadInterfaceTest {
 
 }
 
+/**
+ * 使用线程接口进行多线程
+ */
 class MyThread1 implements Runnable {
 
     @Override
