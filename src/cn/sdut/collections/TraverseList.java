@@ -10,7 +10,7 @@ import java.util.ListIterator;
  */
 
 /**
- * 对于ArrayList和LinkedList集合的三种遍历方法
+ * 对于ArrayList和LinkedList集合的5种遍历方法
  */
 public class TraverseList {
 
