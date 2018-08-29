@@ -2,6 +2,7 @@ package cn.sdut.jdk8;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 
 /**
  * Created by liuzhichao on 2018/8/27.
@@ -77,6 +78,12 @@ public class StreamMiddleOperatorTest {
          */
         long lon = employees.stream().filter(x -> x.getAge() > 30).count();
         System.out.println(lon);
+
+        /**
+         * 取最大值
+         */
+        Optional<Employee> op=	employees.stream().max((e1, e2)->Integer.compare(e1.getSalary(), e2.getSalary()));
+        System.out.println(op.get().getSalary());
 
     }
 
