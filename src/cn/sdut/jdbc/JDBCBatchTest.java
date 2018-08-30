@@ -31,6 +31,9 @@ public class JDBCBatchTest {
             //3.建立连接	Connection
             conn = DriverManager.getConnection(url, user, password);
             //System.out.println("ok");
+            /**
+             * 插入操作
+             */
             //4.创建PreparedStatement对象
             String sql = "insert into  mydept(DEPTNO,DNAME,LOC)  values(?,?,?)";
             pstmt = conn.prepareStatement(sql);
@@ -43,7 +46,7 @@ public class JDBCBatchTest {
             }
             pstmt.executeBatch()*/;
 
-            pstmt.setInt(1,00);
+            /*pstmt.setInt(1,00);
             pstmt.setString(2,"cc");
             pstmt.setString(3,null);
             pstmt.addBatch();
@@ -51,12 +54,27 @@ public class JDBCBatchTest {
             pstmt.setInt(1,01);
             pstmt.setString(2,"ll");
             pstmt.setString(3,"ll");
-            pstmt.addBatch();
+            pstmt.addBatch();*/
 
             //5.执行查询或更新
             pstmt.executeBatch();
             //int[] arr = pstmt.executeBatch();
             //6.结果处理
+            /**
+             * 修改操作
+             */
+            String sql_update = "update mydept set LOC=? where deptno=?";
+            pstmt = conn.prepareStatement(sql_update);
+
+            pstmt.setString(1,"青岛");;
+            pstmt.setInt(2,0);
+            pstmt.addBatch();
+
+            pstmt.setString(1,"青岛");
+            pstmt.setInt(2,1);
+            pstmt.addBatch();
+
+            pstmt.executeBatch();
         } catch (ClassNotFoundException | SQLException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
