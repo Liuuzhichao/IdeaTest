@@ -32,33 +32,30 @@ public class JDBCBatchTest {
             conn = DriverManager.getConnection(url, user, password);
             //System.out.println("ok");
             //4.创建PreparedStatement对象
-            String sql = "insert into  dept(DEPTNO,DNAME,LOC)  values(?,?,?)";
+            String sql = "insert into  mydept(DEPTNO,DNAME,LOC)  values(?,?,?)";
             pstmt = conn.prepareStatement(sql);
 
-            for (int i = 0; i < 5; i++) {
+            /*for (int i = 0; i < 5; i++) {
                 pstmt.setInt(1, 41 + i);
                 pstmt.setString(2, "开发部" + i);
                 pstmt.setString(3, "青岛");
                 pstmt.addBatch();//添加到批处理指令
             }
-            pstmt.executeBatch();
+            pstmt.executeBatch()*/;
 
-            /*pstmt.setInt(1, 51);
-            pstmt.setString(2, "开发部");
-            pstmt.setString(3, "广州");
+            pstmt.setInt(1,00);
+            pstmt.setString(2,"cc");
+            pstmt.setString(3,null);
             pstmt.addBatch();
 
-            pstmt.setInt(1, 52);
-            pstmt.setString(2, "财务部");
-            pstmt.setString(3, "上海");
+            pstmt.setInt(1,01);
+            pstmt.setString(2,"ll");
+            pstmt.setString(3,"ll");
             pstmt.addBatch();
 
-            pstmt.setInt(1, 53);
-            pstmt.setString(2, "销售部");
-            pstmt.setString(3, "北京");
-            pstmt.addBatch();
             //5.执行查询或更新
-            int[] arr = pstmt.executeBatch();*/
+            pstmt.executeBatch();
+            //int[] arr = pstmt.executeBatch();
             //6.结果处理
         } catch (ClassNotFoundException | SQLException e) {
             // TODO Auto-generated catch block
