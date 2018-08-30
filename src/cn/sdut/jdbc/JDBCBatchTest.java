@@ -63,7 +63,7 @@ public class JDBCBatchTest {
             /**
              * 修改操作
              */
-            String sql_update = "update mydept set LOC=? where deptno=?";
+            /*String sql_update = "update mydept set LOC=? where deptno=?";
             pstmt = conn.prepareStatement(sql_update);
 
             pstmt.setString(1,"青岛");;
@@ -74,7 +74,20 @@ public class JDBCBatchTest {
             pstmt.setInt(2,1);
             pstmt.addBatch();
 
+            pstmt.executeBatch();*/
+
+            /**
+             * 删除操作
+             */
+            String sql_del = "delete from mydept where deptno=?";
+            pstmt = conn.prepareStatement(sql_del);
+            pstmt.setInt(1,0);
+            pstmt.addBatch();
+
+            pstmt.setInt(1,1);
+            pstmt.addBatch();
             pstmt.executeBatch();
+
         } catch (ClassNotFoundException | SQLException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
