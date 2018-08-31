@@ -10,10 +10,13 @@ public class Test {
     public static void main(String[] args) {
         // TODO Auto-generated method stub
         DeptDao  deptDao=new DeptDaoImpl();
-        List<Dept> depts=deptDao.getDeptAll();
+        //List<Dept> depts=deptDao.getDeptAll();
         //depts.forEach(System.out::println);
+        //deptDao.addDept(new Dept(88,"88","88"));
 
-        deptDao.addDept(new Dept(88,"88","88"));
+        Dept dept = deptDao.getDeptById(88);
+        System.out.println(dept.toString());
+
     }
 
 }

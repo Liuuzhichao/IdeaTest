@@ -66,6 +66,24 @@ public class DeptDaoImpl implements DeptDao {
 
     @Override
     public Dept getDeptById(int deptno) {
+        Dept dept = null;
+        Connection conn = null;
+        PreparedStatement pst = null;
+        ResultSet rs = null;
+        try {
+            conn = DbUtils.getConnection();
+            String sql = "select * from mydept where deptno="+deptno;
+            pst = conn.prepareStatement(sql);
+            rs = pst.executeQuery();
+            while( rs.next() ) {
+                dept = new Dept(rs.getInt("DEPTNO"),
+                        rs.getString("DNAME"),
+                        rs.getString("LOC"));
+            }
+            return dept;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         return null;
     }
 
