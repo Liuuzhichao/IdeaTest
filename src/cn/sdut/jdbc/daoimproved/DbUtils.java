@@ -28,7 +28,7 @@ public class DbUtils {
     static {
         try {
             //加载属性文件
-            props.load(new FileReader("src/db.properties"));
+            props.load(new FileReader("src/cn/sdut/jdbc/daoimproved/db.properties"));
             //通过键去获取到所对应的值
             Class.forName(props.getProperty("driver"));
         } catch (ClassNotFoundException e) {
