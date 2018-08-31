@@ -11,6 +11,10 @@ import java.util.List;
  * Created by liuzhichao on 2018/8/31.
  */
 public class DeptDaoImpl implements DeptDao {
+    /**
+     * 添加一个部门
+     * @param dept
+     */
     @Override
     public void addDept(Dept dept) {
         Connection conn = null;
@@ -30,6 +34,10 @@ public class DeptDaoImpl implements DeptDao {
         }
     }
 
+    /**
+     * 根据部门编号删除部门
+     * @param deptno
+     */
     @Override
     public void delDept(int deptno) {
         Connection conn = null;
@@ -46,6 +54,10 @@ public class DeptDaoImpl implements DeptDao {
         }
     }
 
+    /**
+     * 根据部门编号修改部门所在地
+     * @param dept
+     */
     @Override
     public void updateDept(Dept dept) {
         Connection conn = null;
@@ -54,7 +66,7 @@ public class DeptDaoImpl implements DeptDao {
             conn = DbUtils.getConnection();
             String sql = "update mydept set loc=? where deptno=?";
             pst = conn.prepareStatement(sql);
-            pst.setString(1,dept.getDname());
+            pst.setString(1,dept.getLoc());
             pst.setInt(2,dept.getDeptno());
             pst.executeUpdate();
         } catch (SQLException e) {
@@ -64,6 +76,11 @@ public class DeptDaoImpl implements DeptDao {
         }
     }
 
+    /**
+     * 根据部门编号查找部门
+     * @param deptno
+     * @return
+     */
     @Override
     public Dept getDeptById(int deptno) {
         Dept dept = null;
@@ -87,6 +104,10 @@ public class DeptDaoImpl implements DeptDao {
         return null;
     }
 
+    /**
+     * 查询所有部门
+     * @return
+     */
     @Override
     public List<Dept> getDeptAll() {
         List<Dept> list = new ArrayList<>();

@@ -11,15 +11,21 @@ public class DbUtils {
     private static final String USER = "scott";
     private static final String PASSWORD = "tiger";
 
+    /**
+     * 加载驱动
+     */
     static {
         try {
             Class.forName("oracle.jdbc.driver.OracleDriver");
-
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
     }
 
+    /**
+     * 建立连接
+     * @return
+     */
     public static Connection getConnection() {
         Connection conn = null;
         try {
@@ -30,6 +36,12 @@ public class DbUtils {
         return conn;
     }
 
+    /**
+     * 关闭连接
+     * @param rs
+     * @param st
+     * @param conn
+     */
     public static void closeAll(ResultSet rs, Statement st, Connection conn) {
         try {
             if( rs != null ) {
