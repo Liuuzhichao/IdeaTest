@@ -1,5 +1,7 @@
 package cn.sdut.jdbc.daoimproved;
 
+import java.util.List;
+
 /**
  * Created by liuzhichao on 2018/8/31.
  */
@@ -11,8 +13,8 @@ public class Test {
         /**
          * 查询所有
          */
-        //List<Dept> depts=deptDao.getDeptAll();
-        //depts.forEach(System.out::println);
+        List<Dept> depts=deptDao.getDeptAll();
+        depts.forEach(System.out::println);
 
         /**
          * 添加
@@ -33,7 +35,7 @@ public class Test {
         /**
          * 根据部门编号修改所在地
          */
-        deptDao.updateDept(new Dept(88,null,"BDQ"));
+        //deptDao.updateDept(new Dept(88,null,"BDQ"));
 
     }
 
